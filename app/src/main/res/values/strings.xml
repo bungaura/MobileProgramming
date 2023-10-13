@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DifferentLayoutActivity</string>
+    <string name="view_planet_in_linear_layout">View Planet In Linear Layout</string>
+    <string name="planets_in_linear_layout">Planets in Linear Layout</string>
+    <string name="earth">earth</string>
+    <string name="jupiter">jupiter</string>
+    <string name="uranus">uranus</string>
+    <string name="mars">mars</string>
+    <string name="view_planet_in_grid_layout">View planet in grid layout</string>
+</resources>

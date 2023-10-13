@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_black"
+    tools:context=".LinearLayoutActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/planets_in_linear_layout"
+        android:textColor="@color/custom_white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/earth"
+        android:src="@drawable/earth"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:contentDescription="@string/earth"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/venus"
+        android:src="@drawable/venus"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:contentDescription="venus"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/jupiter"
+        android:src="@drawable/jupiter"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:contentDescription="@string/jupiter"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/uranus"
+        android:src="@drawable/uranus"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:contentDescription="@string/uranus"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/mars"
+        android:src="@drawable/mars"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:contentDescription="@string/mars"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/toGridButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@color/custom_white"
+        android:text="@string/view_planet_in_grid_layout"
+        android:textColor="@color/custom_black" />
+
+
+</LinearLayout>

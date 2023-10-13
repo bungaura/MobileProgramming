@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_black"
+    tools:context=".GridLayoutActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Planets in Grid Layout"
+        android:textColor="@color/custom_white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <GridLayout
+        android:id="@+id/gridReminder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="80sp"
+        android:layout_marginBottom="100sp"
+        android:rowCount="4"
+        android:columnCount="2">
+
+        <ImageView
+            android:id="@+id/earth"
+            android:src="@drawable/earth"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:padding="10dp"
+            android:layout_margin="10sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+
+        <ImageView
+            android:id="@+id/venus"
+            android:src="@drawable/venus"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+
+        <ImageView
+            android:id="@+id/jupiter"
+            android:src="@drawable/jupiter"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:padding="10dp"
+            android:layout_margin="10sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+
+        <ImageView
+            android:id="@+id/saturn"
+            android:src="@drawable/saturn"
+            android:rotation="45"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+
+        <ImageView
+            android:id="@+id/uranus"
+            android:src="@drawable/uranus"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:padding="10dp"
+            android:layout_margin="10sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+
+        <ImageView
+            android:id="@+id/mars"
+            android:src="@drawable/mars"
+            android:rotation="45"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/toLinearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/custom_white"
+        android:text="@string/view_planet_in_linear_layout"
+        android:textColor="@color/custom_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
